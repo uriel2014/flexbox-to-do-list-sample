@@ -1,0 +1,111 @@
+body {
+  margin: 0px; /* No Margin */
+  background-color: beige;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+}
+
+/*give the class with secondary-background a background-color */
+.secondary-background {
+  background-color: LightSeaGreen;
+}
+
+/* Give the tag line in the header its own styling*/
+.tagline {
+  font-family: 'Quicksand', sans-serif;
+  color: SlateGrey;
+  line-height: 125px;
+}
+
+/* Let us now work with the Header */
+h1 {
+  margin: 0;
+  background-color: maroon;
+  line-height: 100px;
+  color: Khaki;
+}
+
+h2 {
+  margin: 10px;
+}
+
+/* Let us now create the content containter */
+.container {
+  border: 2px solid Snow;
+  display: flex;
+}
+
+/* the TO DO SECTION */
+.week {
+  display: inline-flex;
+  flex-grow: 3;
+  flex-direction: column;
+  /* For the week we added it to be a flex container that has all items aligned next to each other.
+  We then increased in size and directed it in column, such that each day row of the week appears in column mode. */
+}
+
+.row {
+  min-height: 200px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+/*Give each row a min height and display flex property */
+/* Adding to this we wrap all item in this container and give equal space around each flex item of this row.
+We then center the items to the center of the container. */
+
+
+.square {
+  width: 125px;
+ height: 125px;
+ padding: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+/*Here we do the same, we make each square a container of paragraphs and such.
+We center the flex items in square with justify content and align them as such with center.
+This will prevent additional spacing between them. As the row class already makes this happen with
+the space-around value to the justify-content property.  */
+
+.day.square{
+  background-color: maroon;
+  color: white;
+  border: 1px solid black;
+}
+/* will only modify elements with both classnames of day and square*/
+
+.task.square{
+  background-color: Khaki;
+  border: 1px solid black;
+}
+
+/* Will only modify elements with both classes of task and square*/
+.task p{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+/* Style the paragraphs nested in the task class */
+
+
+/* Let us Style the Reminders */
+.reminders h3 {
+  width: 100%;
+  margin: 10px;
+  color: black;
+  line-height: 90px;
+  font-size: 24px;
+}
+
+.reminders {
+  background-color: pink;
+}
+
+/* Footer */
+
+footer {
+  font-size: 24px;
+}
